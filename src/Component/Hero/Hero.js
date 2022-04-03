@@ -1,8 +1,11 @@
-import React from 'react';
-import Baner from '../../Image/slider-2.webp'
-import './Hero.css'
+import { useReviews } from '../../hooks/useReviews';
+import Baner from '../../Image/slider-2.webp';
+import HomeReview from '../HomeReview/HomeReview';
+import './Hero.css';
 
 const Hero = () => {
+    const [reviews, setReviews] = useReviews();
+    const thereReviews = reviews.slice(0, 3);
     return (
         <div>
         <div style={{ backgroundImage: `url(${Baner})`, backgroundSize: "cover", backgroundPosition: "center center", height: "650px", width: "auto" }}>
@@ -21,8 +24,12 @@ const Hero = () => {
             </div>
             
             </div>
-             <h2 className='text-center mt-3 fs-1' style={{color:"#130E66"}}>Review Section</h2>
-
+            <h2 className='text-center mt-3 fs-1' style={{ color: "#130E66" }}>Review Section</h2>
+            <div className='row container mx-auto mt-5 mb-5 gap-4'>
+            {
+                thereReviews.map(review=><HomeReview review={review} key={review.id}></HomeReview>)
+                }
+                </div>
             </div>
     );
 };
