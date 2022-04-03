@@ -1,6 +1,7 @@
 .custom-navbar{
-    background-color: rgba(0, 0, 0, 0.718);
+    background-color: #1a1573;
     color: white;
     position: sticky;
     top: 0;
+    z-index: 100;
 }

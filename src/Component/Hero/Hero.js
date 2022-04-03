@@ -4,6 +4,7 @@ import './Hero.css'
 
 const Hero = () => {
     return (
+        <div>
         <div style={{ backgroundImage: `url(${Baner})`, backgroundSize: "cover", backgroundPosition: "center center", height: "650px", width: "auto" }}>
             
             <div className='hero-container container pt-5'>
@@ -19,7 +20,10 @@ const Hero = () => {
                 </div>
             </div>
             
-        </div>
+            </div>
+             <h2 className='text-center mt-3 fs-1' style={{color:"#130E66"}}>Review Section</h2>
+
+            </div>
     );
 };
 

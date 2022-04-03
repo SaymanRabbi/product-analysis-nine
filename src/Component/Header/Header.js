@@ -5,9 +5,9 @@ import './Header.css'
 const Header = () => {
     return (
         <>
-            <Navbar variant="dark" className='py-3 custom-navbar'>
+            <Navbar className='py-3 custom-navbar '>
           <Container>
-          <Navbar.Brand href="#home" className='text-white fs-3 fw-bold d-none d-md-block'>HPHONE</Navbar.Brand>
+          <Link to="/" className='text-white fs-3 fw-bold d-none d-md-block text-decoration-none'>HPHONE</Link>
             <Nav className="ms-auto fs-5">
             <Link to="/"className='text-white text-decoration-none me-3'>Home</Link>
       <Link to="/reviews"className='text-white text-decoration-none me-3'>Reviews</Link>
