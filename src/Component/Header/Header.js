@@ -5,10 +5,10 @@ import './Header.css'
 const Header = () => {
     return (
         <>
-            <Navbar className='py-3 custom-navbar '>
+            {/* <Navbar className='py-3 custom-navbar '>
           <Container>
-          <NavLink to="/" className='text-white fs-3 fw-bold text-decoration-none'>HPHONE</NavLink>
-            <Nav className="ms-auto fs-5">
+          <NavLink to="/" className='text-white fs-4 fw-bold text-decoration-none'>HPHONE</NavLink>
+            <Nav className="ms-auto ">
             
             <NavLink to="/" className={({isActive})=>isActive?"active-link":"link"}>Home</NavLink>
       <NavLink to="/reviews" className={({isActive})=>isActive?"active-link":"link"}>Reviews</NavLink>
@@ -17,7 +17,23 @@ const Header = () => {
       
     </Nav>
     </Container>
-  </Navbar>
+  </Navbar> */}
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
+  <Navbar.Brand href="#home" className='fs-3'>HPHONE</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+  <Nav className="ms-auto ">
+            
+            <NavLink to="/" className={({isActive})=>isActive?"active-link":"link"}>Home</NavLink>
+      <NavLink to="/reviews" className={({isActive})=>isActive?"active-link":"link"}>Reviews</NavLink>
+      <NavLink to="/dashboard" className={({isActive})=>isActive?"active-link":"link"}>Dashboard</NavLink>
+      <NavLink to="/blogs" className={({isActive})=>isActive?"active-link":"link"}>Blogs</NavLink>
+      
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
   
         </>
     );
