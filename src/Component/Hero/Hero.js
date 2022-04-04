@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useReviews } from '../../hooks/useReviews';
 import Baner from '../../Image/slider-2.webp';
 import HomeReview from '../HomeReview/HomeReview';
@@ -24,13 +25,14 @@ const Hero = () => {
             </div>
             
             </div>
-            <h2 className='text-center mt-3 fs-1' style={{ color: "#130E66" }}>Review Section</h2>
+            <h2 className='text-center mt-3 fs-1'>Review Section</h2>
             <div className='row container mx-auto mt-5 mb-5 gap-4'>
             {
                 thereReviews.map(review=><HomeReview review={review} key={review.id}></HomeReview>)
                 }
-                </div>
             </div>
+            <Link to='/reviews' className='custom-button py-2 d-flex mx-auto justify-content-center align-items-center bg-white text-decoration-none'>All Review</Link>    
+        </div>
     );
 };
 

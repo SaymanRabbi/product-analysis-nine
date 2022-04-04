@@ -12,7 +12,7 @@ const Dashboard = () => {
            
             <div className='row g-0'  style={{width:"100%"}}>
                 <div className='col-md-6 col-12'>
-                <h1 className='text-center mt-5'>User Sallery In BarChart</h1>
+                <h1 className='text-center mt-5 mb-3'>User Sallery In BarChart</h1>
                     <BarChart className='mb-5 mx-auto' width={400} height={500} data={users}  isAnimationActive={true}>
                        
             <CartesianGrid strokeDasharray="3 3" />
@@ -25,7 +25,7 @@ const Dashboard = () => {
             </BarChart>
                 </div>
                 <div className='col-md-6 col-12'>
-                <h1 className='text-center mt-5'>User Sallery In ComposedChart</h1>
+                <h1 className='text-center mt-5 mb-3'>User Sallery In ComposedChart</h1>
                     <ComposedChart className='mx-auto mb-5' width={400 }height={500} data={users}>
         <XAxis dataKey="name" />
   <YAxis />
@@ -38,12 +38,12 @@ const Dashboard = () => {
 </ComposedChart>
                 </div>
                 <div className='col-md-6 col-12'>
-                <h1 className='text-center mt-5'>User Sallery In Treemap</h1>
+                <h1 className='text-center mt-5 mb-3'>User Sallery In Treemap</h1>
                 <Treemap className='mx-auto mb-5'
   width={400}
   height={500}
   data={users}
-  dataKey="sell"
+  dataKey="investment"
   ratio={4 / 3}
   stroke="#fff"
                         fill="#8884d8"
