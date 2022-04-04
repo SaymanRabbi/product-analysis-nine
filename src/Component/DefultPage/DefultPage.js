@@ -9,7 +9,7 @@ const DefultPage = () => {
             <h1 style={{fontSize:"60px",fontWeight:"bold"}}>Page Not Found</h1>
             </div>
             <div>
-                <img src={NotFound} alt="" />
+                <img src={NotFound} className="img-fluid" alt="" />
             </div>
         </div>
     );
