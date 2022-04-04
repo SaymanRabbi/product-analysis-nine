@@ -20,7 +20,7 @@ const HomeReview = ({review}) => {
                 </div>
                <img src={country} style={{height:"20px",width:"20px",borderRadius:"50%"}} alt="" />
             </div>
-            <small > <i>{`${about.slice(0,97)}...`}</i> </small>
+            <small title={about}> <i>{`${about.slice(0,97)}...`}</i> </small>
         </div>
     );
 };
