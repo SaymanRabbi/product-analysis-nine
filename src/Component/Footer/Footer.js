@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
             <div className='w-100 d-flex align-items-center justify-content-around' style={{ height: "100px",backgroundColor:"#52016A"}}>
                 
-                <h6>All Right &copy; Reserved By Sayman</h6>
+                <small>All Right &copy; Reserved By Sayman</small>
                 <Nav className="">
             
             <NavLink to="/" className={({isActive})=>isActive?"active-link fs-6":"link fs-6"}>Home</NavLink>
