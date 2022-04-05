@@ -2,9 +2,8 @@ import React from 'react';
 import './Review.css';
 import {FaStar} from "react-icons/fa"
 const Review = ({ review }) => {
-    const { Picture, name, about, country} = review;
-    // const number = parseInt(rating)
-   
+    const { Picture, name, about, country, rating } = review;
+    const number = parseInt(rating)
     return (
         <div className=' mx-auto review-container col-6 md:col-4 pt-1'>
             <div >
@@ -13,7 +12,7 @@ const Review = ({ review }) => {
                     <img src={Picture} style={{ width: "50px", height: "50px",borderRadius:"50%"}} alt="" />
                     <div className='ms-2'>
                         {
-                            [...Array(5)].map(()=> {
+                            [...Array(number)].map(()=> {
                                 return <FaStar key={Math.random()} className="text-warning"></FaStar>
                             })
                     }

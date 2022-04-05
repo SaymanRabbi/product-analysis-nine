@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <div>
-            <div className='w-100 d-flex align-items-center justify-content-around' style={{ height: "100px",backgroundColor:"#52016A" }}>
+            <div className='w-100 d-flex align-items-center justify-content-around' style={{ height: "100px",backgroundColor:"#52016A"}}>
                 
                 <h6>All Right &copy; Reserved By Sayman Rabbi</h6>
                 <Nav className="">

@@ -5,8 +5,9 @@ import HomeReview from '../HomeReview/HomeReview';
 import './Hero.css';
 
 const Hero = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
     const thereReviews = reviews.slice(0, 3);
+    
     return (
         <div>
         <div style={{ backgroundImage: `url(${Baner})`, backgroundSize: "cover", backgroundPosition: "center center", height: "650px", width: "auto" }}>

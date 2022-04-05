@@ -2,8 +2,8 @@ import React from 'react';
 import {FaStar} from "react-icons/fa"
 
 const HomeReview = ({review}) => {
-    const { Picture, name, about, country} = review;
-   
+    const { Picture, name, about, country, rating } = review;
+    const number = parseInt(rating);
     return (
         <div className=' mx-auto review-container col-6 md:col-4 pt-1'>
             <div className='d-flex justify-content-between mb-2 '>
@@ -11,7 +11,7 @@ const HomeReview = ({review}) => {
                     <img src={Picture} style={{ width: "50px", height: "50px",borderRadius:"50%"}} alt="" />
                     <div className='ms-2'>
                         {
-                            [...Array(5)].map(()=> {
+                            [...Array(number)].map(()=> {
                                 return <FaStar key={Math.random()} className="text-warning"></FaStar>
                             })
                     }
