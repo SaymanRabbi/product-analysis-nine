@@ -6,10 +6,15 @@ import { Route, Routes } from 'react-router-dom';
 import Reviews from './Component/Reviews/Reviews';
 import Dashboard from './Component/Dashboard/Dashboard';
 import Blogs from './Component/Blogs/Blogs';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import DefultPage from './Component/DefultPage/DefultPage';
 import Footer from './Component/Footer/Footer';
+import { useEffect } from 'react';
 function App() {
+  useEffect(() => {
+    AOS.init();
+  },[])
   return (
     <div>
       <Header></Header>      
