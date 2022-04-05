@@ -8,6 +8,7 @@ import Dashboard from './Component/Dashboard/Dashboard';
 import Blogs from './Component/Blogs/Blogs';
 
 import DefultPage from './Component/DefultPage/DefultPage';
+import Footer from './Component/Footer/Footer';
 function App() {
   return (
     <div>
@@ -20,6 +21,7 @@ function App() {
         
         <Route path='*' element={<DefultPage></DefultPage>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

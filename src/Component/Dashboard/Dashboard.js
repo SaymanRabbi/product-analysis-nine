@@ -37,7 +37,7 @@ const Dashboard = () => {
   <Line type="monotone" dataKey="investment" stroke="#ff7300" />
 </ComposedChart>
                 </div>
-                <div className='col-md-6 col-12'>
+                <div className='col-12'>
                 <h1 className='text-center mt-5 mb-3'>User Sallery In Treemap</h1>
                 <Treemap className='mx-auto mb-5'
   width={400}

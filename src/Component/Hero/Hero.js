@@ -31,7 +31,7 @@ const Hero = () => {
                 thereReviews.map(review=><HomeReview review={review} key={review.id}></HomeReview>)
                 }
             </div>
-            <Link to='/reviews' className='custom-button py-2 d-flex mx-auto justify-content-center align-items-center bg-white text-decoration-none'>All Review</Link>    
+            <Link to='/reviews' className='custom-button py-2 d-flex mx-auto justify-content-center align-items-center bg-white text-decoration-none mb-5'>All Review</Link>    
         </div>
     );
 };
